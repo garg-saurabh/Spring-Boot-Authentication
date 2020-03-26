@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8082}
+spring:
+  application:
+    name: greeting-service
+eureka:
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
